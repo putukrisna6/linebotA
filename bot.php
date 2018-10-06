@@ -75,24 +75,36 @@ if ($type == 'join' || $command == '/greet') {
 }
 
 //others
-if($message['type']=='text')
-{
-	if($command == 'Who am I?')
-	{
-		
-		
-		$balas = array(
+if($message['type']=='text') {
+	    if ($command == '/name') {
+		    
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'You are '.$profil->displayName.'. If your name did not appear, please add the bot first.'
+                )
+            )
+        );
+    }
+
+}else if($command == '/time')
+{	
+	$balas = array(
 							'replyToken' => $replyToken,														
 							'messages' => array(
 								array(
-										'type' => 'text',					
-										'text' => 'You are '.$profil->displayName.'. If your name was not displayed, add the bot first.'
+										'type' => 'text',									
+										'text' => 'Time : '. date('Y-m-d H:i:s')									
+									
 									)
 							)
 						);
-				
-	}
+						
 }
+if (isset($balas)) {
+    $result = json_encode($balas);
 
 
 //pesan bergambar
