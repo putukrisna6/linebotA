@@ -74,23 +74,6 @@ if ($type == 'join' || $command == '/greet') {
     );
 }
 
-//others
-if($message['type']=='text') {
-	    if ($command == '/name') {
-		    
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => 'You are '.$profil->displayName.'. If your name did not appear, please add the bot first.'
-                )
-            )
-        );
-    }
-
-
-
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == '/weather') {
