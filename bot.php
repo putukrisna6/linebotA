@@ -74,6 +74,27 @@ if ($type == 'join' || $command == '/greet') {
     );
 }
 
+//others
+if($message['type']=='text')
+{
+	if($pesan_datang=='Who am I?')
+	{
+		
+		
+		$balas = array(
+							'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => 'You are '.$profil->displayName.'. If your name was not displayed, add the bot first.'
+									)
+							)
+						);
+				
+	}
+}
+
+
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == '/weather') {
