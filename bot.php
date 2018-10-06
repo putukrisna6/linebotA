@@ -77,7 +77,7 @@ if ($type == 'join' || $command == '/greet') {
 //others
 if($message['type']=='text')
 {
-	if($pesan_datang=='Who am I?')
+	if($command == 'Who am I?')
 	{
 		
 		
