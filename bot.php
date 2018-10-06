@@ -62,7 +62,7 @@ function cuaca($keyword) {
 
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == '/greet') {
-    $text = "Hello there, Hello '.$profil->displayName.'.";
+    $text = "Hello there,  '$profil->displayName'.";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
@@ -97,7 +97,7 @@ if($message['type']=='text') {
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Hello '.$profil->displayName.', How are you?'										
+										'text' => 'Time : '. date('Y-m-d H:i:s')										
 									
 									)
 							)
