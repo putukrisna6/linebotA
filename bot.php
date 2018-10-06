@@ -62,7 +62,7 @@ function cuaca($keyword) {
 
 //show menu, saat join dan command /menu
 if ($type == 'join' || $command == '/greet') {
-    $text = "Hello there, why are you here again?";
+    $text = "Hello there, Hello '.$profil->displayName.'.";
     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
