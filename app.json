@@ -1,6 +1,6 @@
 {
-  "name": "Line_Bot_Shalat",
-  "description": "Jadwal Shalat Untuk Bot Line",
+  "name": "Test Bot",
+  "description": "Just to fulfill my boredom",
   "repository": "https://github.com/zFz0000/Line_Bot_Shalat",
   "keywords": ["line bot", "messaging api"]
 }
