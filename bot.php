@@ -97,7 +97,7 @@ if($message['type']=='text') {
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'gib sTikCeR pLz'										
+										'text' => 'Hello '.$profil->displayName.', How are you?'										
 									
 									)
 							)
