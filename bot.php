@@ -89,22 +89,6 @@ if($message['type']=='text') {
         );
     }
 
-}else if($command == '/time')
-{	
-	$balas = array(
-							'replyToken' => $replyToken,														
-							'messages' => array(
-								array(
-										'type' => 'text',									
-										'text' => 'Time : '. date('Y-m-d H:i:s')									
-									
-									)
-							)
-						);
-						
-}
-if (isset($balas)) {
-    $result = json_encode($balas);
 
 
 //pesan bergambar
@@ -131,6 +115,32 @@ if($message['type']=='text') {
 								array(
 										'type' => 'text',									
 										'text' => 'Hello '.$profil->displayName.', How are you?'										
+									
+									)
+							)
+						);
+						
+}else if($command == '/time')
+{	
+	$balas = array(
+							'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',									
+										'text' => 'Time : '. date('Y-m-d H:i:s')									
+									
+									)
+							)
+						);
+						
+}else if($command == '/name')
+{	
+	$balas = array(
+							'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',									
+										'text' => 'Hello '.$profil->displayName.'.'									
 									
 									)
 							)
