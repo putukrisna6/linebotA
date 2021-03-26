@@ -1,15 +1,3 @@
-# Line_Bot_Weather
-Script Webhook Line Messaging API Use Heroku Or Other
+This readme isn't used properly
 
-# Developer:
-Copyright @ Medantechno.com
-
-Modified @ Farzain - zFz
-
-# Deploy to:
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-# Source:
-Source : https://medantechno.com/read/news/23/tutorial-membuat-bot-messaging-api-line
-
-PHP Unirest Script Included
+![Untitled (2)](https://user-images.githubusercontent.com/43901559/112587448-2aa59080-8e30-11eb-9553-f860fac5c730.gif)
